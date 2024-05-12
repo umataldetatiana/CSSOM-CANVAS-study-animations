@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Canvas Animations</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Explore Canvas and CSSOM Animations</h1>
+        </header>
+    
+        <!-- Section 1: Simple Parallax Effect -->
+        <section id="parallax-simple">
+            <h2>Simple Parallax Layers</h2>
+            <canvas id="simpleParallaxCanvas"></canvas>
+            <button onclick="toggleSimpleLayers()">Toggle Layers</button>
+        </section>
+    
+        <!-- Section 2: Advanced Parallax Effect with Animations -->
+        <section id="parallax-advanced">
+            <h2>Advanced Parallax Layers with Animations</h2>
+            <canvas id="advancedParallaxCanvas"></canvas>
+            <div>
+                <button onclick="changeAdvancedAnimation()">Change Animation</button>
+                <button onclick="toggleAdvancedLayers()">Next Layer</button>
+            </div>
+        </section>
+    
+        <!-- Section 3: Particle System with Interactivity -->
+        <section id="particle-system">
+            <h2>Interactive Particle System</h2>
+            <canvas id="particleCanvas"></canvas>
+            <input type="color" id="particleColor" onchange="changeParticleColor()">
+            <p>Click on the color box, choose your desired color, and then click outside the color picker to change the particle color.</p>
+        </section>
+        <footer>
+            <p>© 2024 Tatiana Barros. All rights reserved.</p>
+        </footer>
+    
+        <script src="js/script.js"></script>
+    </body>
+    </html>
+    
