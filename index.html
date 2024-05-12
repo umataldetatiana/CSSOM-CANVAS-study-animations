@@ -1,45 +1,49 @@
-<!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Interactive Canvas Animations</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Explore Canvas and CSSOM Animations</h1>
-        </header>
-    
-        <!-- Section 1: Simple Parallax Effect -->
-        <section id="parallax-simple">
-            <h2>Simple Parallax Layers</h2>
-            <canvas id="simpleParallaxCanvas"></canvas>
-            <button onclick="toggleSimpleLayers()">Toggle Layers</button>
-        </section>
-    
-        <!-- Section 2: Advanced Parallax Effect with Animations -->
-        <section id="parallax-advanced">
-            <h2>Advanced Parallax Layers with Animations</h2>
-            <canvas id="advancedParallaxCanvas"></canvas>
-            <div>
-                <button onclick="changeAdvancedAnimation()">Change Animation</button>
-                <button onclick="toggleAdvancedLayers()">Next Layer</button>
-            </div>
-        </section>
-    
-        <!-- Section 3: Particle System with Interactivity -->
-        <section id="particle-system">
-            <h2>Interactive Particle System</h2>
-            <canvas id="particleCanvas"></canvas>
-            <input type="color" id="particleColor" onchange="changeParticleColor()">
-            <p>Click on the color box, choose your desired color, and then click outside the color picker to change the particle color.</p>
-        </section>
-        <footer>
-            <p>© 2024 Tatiana Barros. All rights reserved.</p>
-        </footer>
-    
-        <script src="js/script.js"></script>
-    </body>
-    </html>
-    
+<!DOCTYPE html> <!-- This line is a document type declaration and it tells the browser that this is an HTML5 document. -->
+
+<html lang="pt"> <!-- The <html> tag is the root of an HTML document. The lang attribute specifies the language of the document. -->
+
+<head> <!-- The <head> element contains meta-information about the HTML document. -->
+    <meta charset="UTF-8"> <!-- This line specifies the character encoding for the HTML document. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This line makes the webpage look good on all devices (responsive web design). -->
+    <title>Interactive Canvas Animations</title> <!-- The <title> tag defines the title of the document. -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- The <link> tag defines a link between the HTML document and an external resource. In this case, it's linking to a CSS file. -->
+</head>
+
+<body> <!-- The <body> tag defines the document's body. -->
+    <header> <!-- The <header> element represents a container for introductory content or a set of navigational links. -->
+        <h1>Explore Canvas and CSSOM Animations</h1> <!-- The <h1> tag defines a large heading. -->
+    </header>
+
+    <!-- The <section> tag defines sections in a document. Each section has a unique id. -->
+    <!-- Section 1: Simple Parallax Effect -->
+    <section id="parallax-simple">
+        <h2>Simple Parallax Layers</h2> <!-- The <h2> tag defines a medium heading. -->
+        <canvas id="simpleParallaxCanvas"></canvas> <!-- The <canvas> element is used to draw graphics, on the fly, via JavaScript. -->
+        <button onclick="toggleSimpleLayers()">Toggle Layers</button> <!-- The <button> tag defines a clickable button. -->
+    </section>
+
+    <!-- Section 2: Advanced Parallax Effect with Animations -->
+    <section id="parallax-advanced">
+        <h2>Advanced Parallax Layers with Animations</h2>
+        <canvas id="advancedParallaxCanvas"></canvas>
+        <div> <!-- The <div> tag defines a division or a section in an HTML document. -->
+            <button onclick="changeAdvancedAnimation()">Change Animation</button>
+            <button onclick="toggleAdvancedLayers()">Next Layer</button>
+        </div>
+    </section>
+
+    <!-- Section 3: Particle System with Interactivity -->
+    <section id="particle-system">
+        <h2>Interactive Particle System</h2>
+        <canvas id="particleCanvas"></canvas>
+        <input type="color" id="particleColor" onchange="changeParticleColor()"> <!-- The <input> tag specifies an input field where the user can enter data. -->
+        <p>Click on the color box, choose your desired color, and then click outside the color picker to change the particle color.</p> <!-- The <p> tag defines a paragraph. -->
+    </section>
+
+    <footer> <!-- The <footer> tag defines a footer for a document or section. -->
+        <p>© 2024 Tatiana Barros. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- The <script> tag is used to embed or reference external JavaScript code. -->
+</body>
+</html>
